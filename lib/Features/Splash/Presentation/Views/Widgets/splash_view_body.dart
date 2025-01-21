@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:mvvm_practise/Features/Home/Presentation/Views/home_view.dart';
 import 'package:mvvm_practise/Features/Splash/Presentation/Views/Widgets/sliding_text.dart';
+import 'package:mvvm_practise/constants.dart';
 import 'package:mvvm_practise/core/utils/assets.dart';
 
 class SplashViewBody extends StatefulWidget {
@@ -18,11 +22,8 @@ class _SplashViewBodyState extends State<SplashViewBody>
   @override
   void initState() {
     super.initState();
-    _animationController =
-        new AnimationController(vsync: this, duration: Duration(seconds: 1));
-    slidingAnimation = Tween<Offset>(begin: Offset(0, 2), end: Offset.zero)
-        .animate(_animationController);
-    _animationController.forward();
+    initAnimSlide();
+    navigateToPage();
   }
 
   @override
@@ -43,5 +44,23 @@ class _SplashViewBodyState extends State<SplashViewBody>
         Sliding_text(slidingAnimation: slidingAnimation)
       ],
     );
+  }
+
+  void initAnimSlide() {
+    _animationController =
+        new AnimationController(vsync: this, duration: Duration(seconds: 1));
+    slidingAnimation = Tween<Offset>(begin: Offset(0, 2), end: Offset.zero)
+        .animate(_animationController);
+    _animationController.forward();
+  }
+
+  void navigateToPage() {
+    Future.delayed(kduration, () {
+      Get.to(
+        () => HomeView(),
+        transition: Transition.fade,
+        duration: kduration,
+      );
+    });
   }
 }
