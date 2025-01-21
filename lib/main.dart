@@ -18,7 +18,7 @@ class BooklyApp extends StatelessWidget {
         //Create the qubit here and the widgets will access it
         //This should be the only code in the main file
         GetMaterialApp(
-      theme: ThemeData().copyWith(
+      theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: mainColor,
       ),
       home: const SplashView(),
