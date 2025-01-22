@@ -13,7 +13,7 @@ dependencies:
   get : any
   font_awesome_flutter: any
   google_fonts : any
-
+  go_router : any
 dev_dependencies:
   flutter_test:
     sdk: flutter
