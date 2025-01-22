@@ -11,6 +11,7 @@ dependencies:
     sdk: flutter
   flutter_bloc : any
   get : any
+  font_awesome_flutter: any
 
 dev_dependencies:
   flutter_test:
