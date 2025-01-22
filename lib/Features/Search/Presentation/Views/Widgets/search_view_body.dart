@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:mvvm_practise/Features/Search/Presentation/Views/Widgets/search_result_list_view.dart';
 import 'package:mvvm_practise/Features/Search/Presentation/Views/Widgets/search_text_field.dart';
 
 class SearchViewBody extends StatelessWidget {
@@ -12,6 +13,12 @@ class SearchViewBody extends StatelessWidget {
       child: Column(
         children: [
           CustomSearchTextField(),
+          const SizedBox(
+            height: 16,
+          ),
+          Expanded(
+            child: SearchResultListView(),
+          ),
         ],
       ),
     );
