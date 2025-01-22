@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:mvvm_practise/Features/Home/Presentation/Views/Widgets/book_rating.dart';
 import 'package:mvvm_practise/Features/Home/Presentation/Views/Widgets/custom_book_details_app_bar.dart';
 import 'package:mvvm_practise/Features/Home/Presentation/Views/Widgets/custom_book_image.dart';
+import 'package:mvvm_practise/constants.dart';
+import 'package:mvvm_practise/core/utils/styles.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
   const BookDetailsViewBody({super.key});
@@ -14,8 +17,33 @@ class BookDetailsViewBody extends StatelessWidget {
         children: [
           const CustomBookDetailsAppBar(),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: widthScreen * 0.17),
+            padding: EdgeInsets.symmetric(horizontal: widthScreen * 0.2),
             child: const CustomBookImage(),
+          ),
+          const SizedBox(
+            height: 43,
+          ),
+          Text(
+            "The Jungle Book",
+            style: Styles.textStyle30.copyWith(
+              fontFamily: kFontFamily,
+            ),
+          ),
+          const SizedBox(
+            height: 6,
+          ),
+          Opacity(
+            opacity: 0.7,
+            child: Text(
+              "Rudyard Kipling",
+              style: Styles.textStyle18.copyWith(
+                fontWeight: FontWeight.w500,
+                fontStyle: FontStyle.italic,
+              ),
+            ),
+          ),
+          const BookRating(
+            mainAxisAlignment: MainAxisAlignment.center,
           ),
         ],
       ),
