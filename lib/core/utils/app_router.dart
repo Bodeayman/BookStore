@@ -6,6 +6,7 @@ import 'package:mvvm_practise/Features/Splash/Presentation/Views/splash_view.dar
 abstract class AppRouter {
   static const KHomeView = '/homeView';
   static const KBookDetails = '/bookDetailsView';
+  static const KSearchView = '/searchView';
 
   static final router = GoRouter(
     routes: [
@@ -19,6 +20,10 @@ abstract class AppRouter {
       ),
       GoRoute(
         path: '/bookDetailsView',
+        builder: (context, state) => const BookDetailsView(),
+      ),
+      GoRoute(
+        path: '/searchView',
         builder: (context, state) => const BookDetailsView(),
       ),
     ],
