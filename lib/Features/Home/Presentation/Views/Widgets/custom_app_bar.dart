@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:go_router/go_router.dart';
+import 'package:mvvm_practise/core/utils/app_router.dart';
 import 'package:mvvm_practise/core/utils/assets.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -24,7 +26,9 @@ class CustomAppBar extends StatelessWidget {
           // I think that the spacer will leave a space between them like between
           IconButton(
             icon: const Icon(FontAwesomeIcons.magnifyingGlass, size: 20),
-            onPressed: () {},
+            onPressed: () {
+              GoRouter.of(context).push(AppRouter.KSearchView);
+            },
           )
         ],
       ),

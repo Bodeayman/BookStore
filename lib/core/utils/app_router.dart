@@ -1,6 +1,7 @@
 import 'package:go_router/go_router.dart';
 import 'package:mvvm_practise/Features/Home/Presentation/Views/book_details_view.dart';
 import 'package:mvvm_practise/Features/Home/Presentation/Views/home_view.dart';
+import 'package:mvvm_practise/Features/Search/Presentation/Views/search_view.dart';
 import 'package:mvvm_practise/Features/Splash/Presentation/Views/splash_view.dart';
 
 abstract class AppRouter {
@@ -24,7 +25,7 @@ abstract class AppRouter {
       ),
       GoRoute(
         path: '/searchView',
-        builder: (context, state) => const BookDetailsView(),
+        builder: (context, state) => const SearchView(),
       ),
     ],
   );
