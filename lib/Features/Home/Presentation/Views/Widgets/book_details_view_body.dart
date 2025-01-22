@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mvvm_practise/Features/Home/Presentation/Views/Widgets/book_actions_buttons.dart';
 import 'package:mvvm_practise/Features/Home/Presentation/Views/Widgets/book_rating.dart';
 import 'package:mvvm_practise/Features/Home/Presentation/Views/Widgets/custom_book_details_app_bar.dart';
 import 'package:mvvm_practise/Features/Home/Presentation/Views/Widgets/custom_book_image.dart';
@@ -42,14 +43,22 @@ class BookDetailsViewBody extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(
+            height: 5,
+          ),
           const BookRating(
             mainAxisAlignment: MainAxisAlignment.center,
           ),
+          const SizedBox(
+            height: 37,
+          ),
+          const BooksAction(),
         ],
       ),
     );
   }
 }
+
 
 
 //Sometimes you should use SafeArea because it will prevent the Notificaiton bar problems
