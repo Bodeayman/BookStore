@@ -12,6 +12,7 @@ dependencies:
   flutter_bloc : any
   get : any
   font_awesome_flutter: any
+  google_fonts : any
 
 dev_dependencies:
   flutter_test:
