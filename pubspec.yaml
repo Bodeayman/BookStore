@@ -23,3 +23,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+  fonts:
+    - family : GT
+      fonts:
+        - asset : assets/fonts/GT-Sectra-Fine-Regular.ttf

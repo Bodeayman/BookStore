@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mvvm_practise/constants.dart';
 import 'package:mvvm_practise/core/utils/assets.dart';
 
 class BestSellerListViewItem extends StatelessWidget {
@@ -28,8 +29,12 @@ class BestSellerListViewItem extends StatelessWidget {
               ),
             ),
           ),
-          Column(
-            children: [],
+          const Column(
+            children: [
+              Text(
+                "This test for the book",
+              ),
+            ],
           ),
         ],
       ),
