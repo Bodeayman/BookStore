@@ -15,6 +15,7 @@ dependencies:
   google_fonts : any
   go_router : any
   dartz : any
+  dio : any
 dev_dependencies:
   flutter_test:
     sdk: flutter

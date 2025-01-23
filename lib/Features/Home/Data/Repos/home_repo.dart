@@ -3,7 +3,7 @@ import 'package:mvvm_practise/Features/Home/Data/Models/book_model/book_model.da
 import 'package:mvvm_practise/core/errors/failure.dart';
 
 abstract class HomeRepo {
-  Future<Either<Failure, List<BookModel>>> fetchBestSellerBooks();
+  Future<Either<Failure, List<BookModel>>> fetchNewestBooks();
   Future<Either<Failure, List<BookModel>>> fetchFeaturedBooks();
 }
 
