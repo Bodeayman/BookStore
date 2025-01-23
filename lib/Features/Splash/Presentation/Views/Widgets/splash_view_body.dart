@@ -61,7 +61,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
       //   duration: kduration,
       // );
 
-      GoRouter.of(context).push(AppRouter.KHomeView);
+      GoRouter.of(context).pushReplacement(AppRouter.KHomeView);
     });
   }
 }

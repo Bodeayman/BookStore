@@ -36,9 +36,7 @@ class CustomSearchTextField extends StatelessWidget {
               FontAwesomeIcons.magnifyingGlass,
               size: 22,
             ),
-            onPressed: () {
-              GoRouter.of(context).push(AppRouter.KHomeView);
-            },
+            onPressed: () {},
           ),
         ),
       ),

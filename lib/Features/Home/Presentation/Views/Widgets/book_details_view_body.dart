@@ -42,6 +42,5 @@ class BookDetailsViewBody extends StatelessWidget {
   }
 }
 
-
 //Sometimes you should use SafeArea because it will prevent the Notificaiton bar problems
 // in our program
