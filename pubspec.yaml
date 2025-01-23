@@ -7,26 +7,29 @@ environment:
   sdk: ^3.5.4
 
 dependencies:
+  bloc: ^9.0.0
+  dartz: any
+  dio: any
   flutter:
     sdk: flutter
-  flutter_bloc : any
-  get : any
+  flutter_bloc: any
   font_awesome_flutter: any
-  google_fonts : any
-  go_router : any
-  dartz : any
-  dio : any
+  get: any
+  go_router: any
+  google_fonts: any
+  equatable: any
+
 dev_dependencies:
+  equatable: any
+  flutter_lints: ^4.0.0
   flutter_test:
     sdk: flutter
-  flutter_lints: ^4.0.0
-  equatable : any
 
 flutter:
   uses-material-design: true
   assets:
     - assets/images/
   fonts:
-    - family : GT
+    - family: GT
       fonts:
-        - asset : assets/fonts/GT-Sectra-Fine-Regular.ttf
+        - asset: assets/fonts/GT-Sectra-Fine-Regular.ttf
